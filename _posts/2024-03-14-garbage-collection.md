@@ -56,4 +56,4 @@ pin: true
 > 그러므로 필요한 경우 개발하는 시스템의 특성에 맞게 GC에 대한 설정을 변경해 효율적으로 사용할 필요가 있습니다. 가비지 컬렉션 튜닝이라고 하는 그 과정은 차후 별도로 포스팅 하겠습니다. 
 > <br/>감사합니다.
 
-[m-s-c]: assets/img/posts/2024-03-14-garbage-collection/mark-sweep-compaction.webp "mark-sweep-compaction"
+[m-s-c]: posts/2024-03-14-garbage-collection/mark-sweep-compaction.webp "mark-sweep-compaction"
