@@ -19,17 +19,17 @@ title: 이건 나의 블로그 # the main title
 tagline: It's my blog # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  Hello, it's my blog.
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
 url: "https://imbsh.github.io"
 
-github:
-  username: imbsh # change to your github username
+#github:
+#  username: imbsh # change to your github username
 
-twitter:
-  username: twitter_username # change to your twitter username
+#twitter:
+#  username: twitter_username # change to your twitter username
 
 social:
   # Change to your full name.
