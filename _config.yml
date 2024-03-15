@@ -14,12 +14,12 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: 곰 블로그 # the main title
+title: IT 백팩 # the main title
 
-tagline: It's a bear blog # it will display as the sub-title
+tagline: It's a IT Backpack # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Hello, It's a bear blog.
+  Hello, It's a IT Backpack.
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
