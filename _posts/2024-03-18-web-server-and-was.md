@@ -35,7 +35,7 @@ pin: true
 
 ## 정적 컨텐츠와 Web Server / 동적 컨텐츠와 WAS
 > ![web-server-and-was][web-server-and-was]
-> <br/>(출처:<a href="https://gmlwjd9405.github.io/2018/10/27/webserver-vs-was.html">https://gmlwjd9405.github.io/2018/10/27/webserver-vs-was.html<a/>)
+> <br/>( 출처 : https://gmlwjd9405.github.io/2018/10/27/webserver-vs-was.html )
 
 ## Web Server와 WAS를 구분하는 이유
 > - 기능 분리로 서버 부하 방지
