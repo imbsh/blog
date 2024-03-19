@@ -1,5 +1,5 @@
 ---
-title: Compilere vs Interpreter vs JIT
+title: Compiler vs Interpreter vs JIT
 author: imbsh
 date: 2024-03-19 08:20:00 +0900
 categories: [IT, DEVELOPMENT INFORMATION]
