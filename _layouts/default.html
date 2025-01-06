@@ -11,7 +11,6 @@ layout: compress
   {% capture prefer_mode %}data-mode="{{ site.theme_mode }}"{% endcapture %}
 {% endif %}
 
-{% comment %} script 추가 // 상단 스크롤 게이지 {% endcomment %}
 <script>
   window.addEventListener('scroll', function () {
     // 게이지바 엘리먼트와 현재 스크롤 위치를 가져옴
@@ -36,7 +35,7 @@ layout: compress
 
   <body>
     {% include sidebar.html lang=lang %}
-    {% comment %} 추가 1줄 // 상단 스크롤 게이지{% endcomment %}
+    <!-- 상단 스크롤 게이지 -->
     <div id="scroll-guage" style="position:fixed; z-index:999; height:5px; background:#9cc3fd;"></div>
     <div id="main-wrapper" class="d-flex justify-content-center">
       <div class="container d-flex flex-column px-xxl-5">
