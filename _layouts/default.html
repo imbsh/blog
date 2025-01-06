@@ -1,7 +1,6 @@
 ---
 layout: compress
 ---
-
 <!doctype html>
 
 {% include origin-type.html %}
@@ -12,13 +11,33 @@ layout: compress
   {% capture prefer_mode %}data-mode="{{ site.theme_mode }}"{% endcapture %}
 {% endif %}
 
+{% comment %} script 추가 // 상단 스크롤 게이지 {% endcomment %}
+<script>
+  window.addEventListener('scroll', function () {
+    // 게이지바 엘리먼트와 현재 스크롤 위치를 가져옴
+    let gaugeBar = document.getElementById('scroll-guage');
+    let scrollPosition = window.scrollY || window.pageYOffset;
+
+    // 전체 페이지 높이와 브라우저 창 높이를 가져옴
+    let pageHeight = document.documentElement.scrollHeight;
+    let windowHeight = window.innerHeight;
+
+    // 현재 스크롤 위치에서 게이지바가 차는 비율을 계산
+    let fillRatio = scrollPosition / (pageHeight - windowHeight);
+
+    // 계산된 비율로 게이지바 채우기
+    gaugeBar.style.width = fillRatio * 100 + '%';
+  });
+</script>
+
 <!-- `site.alt_lang` can specify a language different from the UI -->
 <html lang="{{ page.lang | default: site.alt_lang | default: site.lang }}" {{ prefer_mode }}>
   {% include head.html %}
 
   <body>
     {% include sidebar.html lang=lang %}
-
+    {% comment %} 추가 1줄 // 상단 스크롤 게이지{% endcomment %}
+    <div id="scroll-guage" style="position:fixed; z-index:999; height:5px; background:#9cc3fd;"></div>
     <div id="main-wrapper" class="d-flex justify-content-center">
       <div class="container d-flex flex-column px-xxl-5">
         {% include topbar.html lang=lang %}
