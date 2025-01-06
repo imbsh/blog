@@ -13,18 +13,14 @@ layout: compress
 
 <script>
   window.addEventListener('scroll', function () {
-    // 게이지바 엘리먼트와 현재 스크롤 위치를 가져옴
     let gaugeBar = document.getElementById('scroll-guage');
     let scrollPosition = window.scrollY || window.pageYOffset;
 
-    // 전체 페이지 높이와 브라우저 창 높이를 가져옴
     let pageHeight = document.documentElement.scrollHeight;
     let windowHeight = window.innerHeight;
 
-    // 현재 스크롤 위치에서 게이지바가 차는 비율을 계산
     let fillRatio = scrollPosition / (pageHeight - windowHeight);
 
-    // 계산된 비율로 게이지바 채우기
     gaugeBar.style.width = fillRatio * 100 + '%';
   });
 </script>
