@@ -1,4 +1,8 @@
 /* The common styles */
+@use 'addon/module' as *;
+@use 'colors/typography-light' as *;
+@use 'colors/typography-dark' as *;
+@use 'addon/variables' as *;
 
 html {
   @media (prefers-color-scheme: light) {
@@ -23,7 +27,9 @@ html {
     }
   }
 
-  font-size: 16px;
+  & {
+    font-size: 16px;
+  }
 }
 
 body {
